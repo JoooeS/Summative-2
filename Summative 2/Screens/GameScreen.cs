@@ -16,6 +16,8 @@ namespace Summative_2
 
         int scoreCounter;
 
+        int counter;
+
         public GameScreen()
         {
             InitializeComponent();
