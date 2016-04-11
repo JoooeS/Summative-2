@@ -1,4 +1,11 @@
-﻿using System;
+﻿/// Program Name: Colours!
+/// Program description: Shoot monsters and gain courage, get hit? You lose courage :(
+/// 
+/// Created by: Joe S
+/// Date created: Like beginning of April
+/// 
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;

@@ -10,11 +10,25 @@ using System.Windows.Forms;
 
 namespace Summative_2
 {
-    public partial class MenuScreen : UserControl
+    public partial class GameOverScreen : UserControl
     {
-        public MenuScreen()
+        public GameOverScreen()
         {
             InitializeComponent();
+        }
+
+        private void buttonStart_Click(object sender, EventArgs e)
+        {
+            Form f = this.FindForm();
+            f.Controls.Remove(this);
+
+            GameScreen gs = new GameScreen();
+            f.Controls.Add(gs);
+        }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit(); 
         }
     }
 }

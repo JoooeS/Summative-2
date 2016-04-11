@@ -48,6 +48,7 @@
             // buttonEnd
             // 
             this.buttonEnd.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonEnd.Enabled = false;
             this.buttonEnd.FlatAppearance.BorderSize = 0;
             this.buttonEnd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEnd.Font = new System.Drawing.Font("Trajan Pro", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -56,9 +57,9 @@
             this.buttonEnd.Name = "buttonEnd";
             this.buttonEnd.Size = new System.Drawing.Size(82, 31);
             this.buttonEnd.TabIndex = 3;
-            this.buttonEnd.Text = "Leave";
+            this.buttonEnd.TabStop = false;
+            this.buttonEnd.Text = ":)";
             this.buttonEnd.UseVisualStyleBackColor = false;
-            this.buttonEnd.Click += new System.EventHandler(this.buttonEnd_Click);
             // 
             // timerGame
             // 
@@ -72,8 +73,13 @@
             this.BackgroundImage = global::Summative_2.Properties.Resources.BKG_Forest;
             this.Controls.Add(this.buttonEnd);
             this.Controls.Add(this.labelScore);
+            this.DoubleBuffered = true;
             this.Name = "GameScreen";
             this.Size = new System.Drawing.Size(600, 400);
+            this.Load += new System.EventHandler(this.GameScreen_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.GameScreen_Paint);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.GameScreen_KeyUp);
+            this.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.GameScreen_PreviewKeyDown);
             this.ResumeLayout(false);
 
         }

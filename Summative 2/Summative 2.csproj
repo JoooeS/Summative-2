@@ -49,6 +49,12 @@
     <Compile Include="Classes\Bullet.cs" />
     <Compile Include="Classes\Monster.cs" />
     <Compile Include="Classes\Player.cs" />
+    <Compile Include="Screens\GameOverScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Screens\GameOverScreen.Designer.cs">
+      <DependentUpon>GameOverScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\MainScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -60,12 +66,6 @@
     </Compile>
     <Compile Include="Screens\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Screens\GameOverScreen.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Screens\GameOverScreen.Designer.cs">
-      <DependentUpon>GameOverScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Screens\GameScreen.cs">
       <SubType>UserControl</SubType>
@@ -115,6 +115,63 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Forest_BKG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\233.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
